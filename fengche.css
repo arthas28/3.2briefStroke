@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*定义外容器样式，添加背景动画效果*/
+.wrapper{
+    min-width: 800px;
+    min-height: 600px;
+    position: absolute;
+    overflow: hidden;
+    background-color: dodgerblue;
+    -webkit-animation: sky 6s linear infinite;
+    -moz-animation: sky 6s linear infinite;
+}
+/*定义风车容器样式*/
+.fengche{
+    width: 300px;
+    height: 500px;
+    margin: 80px 0 0 100px;
+    position: relative;
+
+}
+/*风车顶部*/
+.fengche_head{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    margin: 20px 60px;
+    border: 40px solid transparent;
+    border-bottom-color: red;
+}
+/*风车风叶部分，添加旋转动画效果*/
+.fengche_blades{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: absolute;
+    overflow: hidden;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+}
+.fengche_blade1{
+    width: 0px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: -13px;
+    border: 20px solid snow;
+    border-top-color: transparent;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    opacity: 0.8;
+}
+.fengche_blade2{
+    width: 0px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: 46px;
+    border: 20px solid snow;
+    border-top-color: transparent;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    opacity: 0.8;
+}
+.fengche_blade3{
+    width: 0px;
+    height: 50px;
+    margin-left: 148px;
+    margin-top: -90px;
+    border: 20px solid snow;
+    border-top-color: transparent;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    opacity: 0.8;
+}
+.fengche_blade4{
+    width: 0px;
+    height: 50px;
+    margin-left: 148px;
+    margin-top: -226px;
+    border: 20px solid snow;
+    border-top-color: transparent;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    opacity: 0.8;
+}
+.fengche_vane1{
+    width: 0px;
+    height: 200px;
+    z-index: 2;
+    border: 2px solid white;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    margin-left: 99px;
+    margin-top: -78px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+.fengche_vane2{
+    width: 0px;
+    height: 200px;
+    z-index: 2;
+    border: 2px solid white;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    margin-left: 97px;
+    margin-top: -204px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+}
+/*风车底座部分*/
+.fengche_base{
+    width: 80px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 40px;
+    opacity: 0.8;
+    border-bottom: 320px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+/*风车窗户*/
+.fengche_win{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    margin: 180px 0 0 80px;
+    border: 20px solid snow;
+}
+/*云朵样式，添加漂移动画效果*/
+.cloud{
+    width: 150px;
+    height: 75px;
+    position: absolute;
+    top: 20px;
+    opacity: 0.8;
+    -webkit-animation: cloudmove 30s linear infinite;
+    -moz-animation: cloudmove 30s linear infinite;
+}
+.cloud_one{
+    width: 100px;
+    height: 50px;
+    margin: 2px 0 0 20px;
+    position: absolute;
+    border-top: 2px solid snow;
+    border-radius: 50px/25px;
+    background-color: snow;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+
+}
+.cloud_two{
+    width: 70px;
+    height: 30px;
+    margin: 38px 0 0 22px;
+    position: absolute;
+    border-bottom: 2px solid snow;
+    border-radius: 35px/15px;
+    background-color: snow;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+.cloud_three{
+    width: 40px;
+    height: 20px;
+    margin: 37px 0 0 77px;
+    position: absolute;
+    border-top: 2px solid snow;
+    border-radius: 20px/10px;
+    background-color: snow;
+    -webkit-transform: rotate(173deg);
+    -moz-transform: rotate(173deg);
+}
+.cloud_four{
+    width: 20px;
+    height: 10px;
+    margin: 32px 0 0 109px;
+    position: absolute;
+    border-top: 2px solid snow;
+    border-radius: 10px/5px;
+    background-color: snow;
+    -webkit-transform: rotate(100deg);
+    -moz-transform: rotate(100deg);
+}
+.cloud_five{
+    width: 30px;
+    height: 20px;
+    margin: 28px 0 0 5px;
+    position: absolute;
+    border-top: 2px solid snow;
+    border-radius: 15px/10px;
+    background-color: snow;
+    -webkit-transform: rotate(-85deg);
+    -moz-transform: rotate(-85deg);
+}
+/*太阳样式，添加渐变动画效果*/
+.sun{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 20px 0 0 560px;
+    border-radius: 40px;
+    background-color: gold;
+    -webkit-animation: sunshie 6s linear infinite;
+    -moz-animation: sunshie 6s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes spin {
+    0%{-moz-transform: rotate(0deg);}
+    100%{-moz-transform: rotate(-360deg);}
+}
+@-webkit-keyframes cloudmove {
+    0%{left: 108%;}
+    100%{left: -8%;}
+}
+@-moz-keyframes cloudmove {
+    0%{left: 108%;}
+    100%{left: -8%;}
+}
+@-webkit-keyframes sunshie {
+    0%{background-color: gold;}
+    50%{background-color: #edff40;}
+    100%{background-color: gold;}
+}
+@-moz-keyframes sunshie {
+    0%{background-color: gold;}
+    50%{background-color: #edff40;}
+    100%{background-color: gold;}
+}
+@-webkit-keyframes sky {
+    0%{background-color: dodgerblue;}
+    50%{background-color: blue;}
+    100%{background-color: dodgerblue;}
+}
+@-moz-keyframes sunsky {
+    0%{background-color: dodgerblue;}
+    50%{background-color: blue;}
+    100%{background-color: dodgerblue;}
+}
